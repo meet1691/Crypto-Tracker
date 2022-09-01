@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:layout_margin="4dp"
+    app:cardElevation="3dp"
+    app:cardBackgroundColor="@color/pink_shade_2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RelativeCurrency">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvCurrencySymbol"
+            android:layout_margin="2dp"
+            android:padding="3dp"
+            android:textColor="@color/black"
+            android:text="Symbol"
+            android:layout_toLeftOf="@+id/tvCurrencyRate"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCurrencySymbol"
+            android:id="@+id/tvCurrencyName"
+            android:layout_margin="2dp"
+            android:padding="3dp"
+            android:textColor="@color/black"
+            android:text="Name"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="Rate"
+            android:id="@+id/tvCurrencyRate"
+            android:textColor="@color/black"
+            android:layout_marginEnd="3dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="2dp"
+            android:textStyle="bold"
+            android:padding="3dp"
+
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
