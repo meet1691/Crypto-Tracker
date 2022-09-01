@@ -131,10 +131,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 HashMap<String,String> headers = new HashMap<>();
-                headers.put("X-CMC_PRO_API_KEY","Your Api Key");
+                headers.put("X-CMC_PRO_API_KEY","Your Api key");
                 return headers;
             }
         };
         requestQueue.add(jsonObjectRequest);
+
     }
 }
